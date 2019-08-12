@@ -3,10 +3,14 @@
 ## *User Stories:*
 
 1) As a user
- I can view my list of Bookmarks.
+ I would like to see a list of Bookmarks.
 
 #Domain Model
-Objects   | Messages
-
-User      |
-Bookmarks | Show bookmarks
+Client      | Controller    |   Model           | View
+        gets request-->
+            |               |                   |
+ Bookmarks  |      App      |       Bookmarks   |      erb bookmarks        
+      <--response
+            |               |     [Bookmarks ]  |       
+            
+    
